@@ -1,31 +1,50 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<nav>
-		<ul>
-			<li><a href="https://www.google.com">Google</a></li>
-			<li><a href="https://unsplash.com/">Unsplash</a></li>
-			<li><a href="https://www.youtube.com/">Youtube</a></li>
-		</ul>
-	</nav>
-	<section>
-	<audio controls>
-  <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mp3">
-	</audio>
-	<audio controls>
-  <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-	</audio>
-	<audio controls>
-  <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mp3">
-	</audio>
-    <script type="text/javascript" src="./script.js"></script>
-    </section>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://www.google.com" title="Go to Google">Google</a></li>
+                <li><a href="https://unsplash.com/" title="Browse Unsplash">Unsplash</a></li>
+                <li><a href="https://www.youtube.com/" title="Watch videos on YouTube">YouTube</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="audio-container">
+            <figure>
+                <audio controls>
+                    <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mp3">
+                </audio>
+                <figcaption>Track 1: The Neverwritten Role-Playing Game</figcaption>
+            </figure>
+
+            <figure>
+                <audio controls>
+                    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+               </audio>
+                <figcaption>Track 2: Epoq - Lepidoptera</figcaption>
+            </figure>
+
+            <figure>
+                <audio controls>
+                    <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mp3">
+               </audio>
+                <figcaption>Track 3: Paza - Moduless</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
